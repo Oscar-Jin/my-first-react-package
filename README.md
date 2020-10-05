@@ -1,6 +1,6 @@
-# Oscar Says Hi! 
+# Oscar says hi! 
 
-a dummy project for leaning how to publish npm package.
+in case you are wondering, this is just a fun & hobby project for testing how to publish packages on npm.
 
 # Installation
 
