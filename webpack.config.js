@@ -30,4 +30,8 @@ module.exports = {
   devServer: {
     port: 3001,
   },
+  output: {
+    path: path.join(__dirname, "examples/dist"),
+    filename: "bundle.js",
+  },
 };
