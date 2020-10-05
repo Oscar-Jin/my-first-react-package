@@ -2,7 +2,7 @@
   "name": "@oscar/my-first-react-package",
   "version": "1.0.0",
   "description": "test package for just testing and for fun!",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "directories": {
     "example": "examples"
   },
@@ -11,7 +11,8 @@
     "transpile": "babel src -d dist --copy-files",
     "build": "webpack --mode production",
     "deploy": "gh-pages -d examples/dist",
-    "publish-demo": "npm run build && npm run deploy"
+    "publish-demo": "npm run build && npm run deploy",
+    "prepublishOnly": "npm run transpile"
   },
   "repository": {
     "type": "git",
@@ -42,5 +43,9 @@
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
